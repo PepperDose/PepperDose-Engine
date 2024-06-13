@@ -65,7 +65,7 @@ class Button(Rect2D):
         else:
             self.hovered = False
         leftclick, _, _ = pygame.mouse.get_pressed()
-        if leftclick and self.color_rect.collidepoint(window.get_mouse_pos()):
+        if leftclick and self.hovered:
             self.pressed = True
         else:
             self.pressed = False

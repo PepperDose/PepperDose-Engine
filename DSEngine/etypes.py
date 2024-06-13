@@ -61,10 +61,6 @@ class Window:
     
     def key_just_pressed(self,scancode:int):
         return self.pressed_keys[scancode] and not self.prev_keys[scancode]
-    
-
-
-        
 
 class Type2D:
     def __init__(self, layer=1, position=pygame.Vector2(0.0, 0.0), rotation=0.0):
